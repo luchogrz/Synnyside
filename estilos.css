@@ -1,0 +1,379 @@
+/* font-family: 'Fraunces', serif;
+font-family: 'Barlow', sans-serif; */
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    background-color: rgba(28, 84, 109, 1);
+
+    
+}
+.container {
+    display: grid;
+    height: 100px;
+    width: 1440px;
+    margin: 0 250px 0 150px;
+    
+    grid-template-columns: repeat( 2 1fr);
+    grid-template-rows: repeat ( 8 1fr);
+    grid-template-areas: 
+    "barra barra"
+    "hero  hero "
+    "huevo huevo "
+    "copa  copa "
+    "cereza cereza "
+    "testimonio testimonio"
+    "mix mix"
+    "footer footer ";
+
+}
+
+/* --------------------------------------------BARRA */
+
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px 0 32px ;
+    grid-area: barra;
+    background-color: rgba(61, 190, 255, 1);
+   
+    
+}
+
+h3 {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 800;
+}
+
+
+.nav a {
+    padding-right: 30px;
+    text-decoration: none;
+    color: white;
+  
+}
+
+.text-left {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 100px;
+   
+    color: white;
+    font-weight: 600;
+    font-size: 2rem; 
+}
+
+.text-left {
+    font-family: 'Barlow', sans-serif;
+    font-weight: bold;
+    
+}
+
+button {
+    border-radius: 25px;
+    border: none;
+    background-color: white;
+    padding: 10px 25px;
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+/* ---------------------------------------HERO  */
+
+.hero {
+   
+    display: flex;
+    flex-direction: column;
+    width: 1440px;
+    height: 600px;
+    grid-area: hero;
+    /* background-color:rgba(61, 190, 255, 1) */
+    background-image: url("./images/desktop/image-header.jpg" );
+    background-size: contain;
+    background-position: center;
+  
+}
+
+
+
+
+.hero h1 {
+    
+   display: flex;
+   justify-content: center;
+    padding-top: 120px;
+    font-family: 'Fraunces', serif;
+    color: white;
+    letter-spacing: 10px;
+    font-size: 48px;
+    
+    text-transform: uppercase;
+
+}
+
+
+
+/* ------------------------------------------HUEVO */
+
+
+.huevo {
+    display: flex;
+    grid-area: huevo;
+    background-color:white;
+    width: 1440px;
+    height: 600px;
+}
+
+.texto-huevo {
+    display: flex;
+    flex-direction: column;
+    padding: 150px;
+    justify-content: center;
+    align-content: center;
+    color: rgba(152, 150, 162, 1);
+}
+
+.texto-huevo h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 48px;
+    color: black;
+}
+
+.texto-huevo button {
+    padding-left: -100px;
+}
+
+
+/* ------------------------------------------COPA */
+.copa {
+    display: flex;
+    grid-area: copa;
+    background-color: white;
+    width: 1440px;
+    height: 600px;
+  
+
+}
+
+
+.texto-copa {
+    display: flex;
+    flex-direction: column;
+    padding: 150px;
+    justify-content: center;
+    align-content: center;
+    color: rgba(152, 150, 162, 1);
+}
+
+.texto-copa h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 48px;
+    color: black;
+}
+
+.texto-copa button {
+    padding-left: -100px;
+}
+
+
+
+
+/* ----------------------------------------CEREZA */
+.cereza {
+    display: flex;
+    grid-area: cereza;
+    text-align: center;
+   
+   
+
+    
+}
+
+.cereza div {
+    width: 720px;
+    height: 600px;
+}
+
+.texto-cereza-uno h3 {
+    font-family: 'Fraunces', serif;
+    font-size: 36px;
+    margin-top: 390px;
+    color: rgba(33, 83, 72, 1);
+}
+
+.texto-cereza-uno p {
+    margin-bottom: 25px;
+    line-height: 25px;
+    font-weight: 600;
+    color: rgba(33, 83, 72, 1);
+}
+
+
+
+
+.texto-cereza-uno{
+
+    background-image: url(./images/desktop/image-graphic-design.jpg);
+}
+
+
+.texto-cereza-dos h3 {
+    font-family: 'Fraunces', serif;
+    font-size: 36px;
+    margin-top: 390px;
+    color: rgba(28, 84, 109, 1);
+}
+
+.texto-cereza-dos p {
+    margin-bottom: 25px;
+    line-height: 25px;
+    font-weight: 600;
+    color: rgba(28, 84, 109, 1);
+}
+
+
+
+.texto-cereza-dos {
+    
+    background-image: url(./images/desktop/image-photography.jpg);
+}
+
+
+
+
+/* --------------------------------------TESTIMONIO */
+
+.testimonio {
+    
+    width: 1440px;
+    height: 1000px;
+    background-color: rgba(255, 251, 248, 1);
+    
+}
+
+.testimonio h2 {
+ position: absolute;
+margin-top: 250px;
+margin-left: 570px;
+    font-size: 24px;
+    color: rgba(167, 171, 172, 1);
+    font-family: 'Fraunces', serif;
+    letter-spacing: 3px;
+    
+}
+
+.testimonio img {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+  
+}
+
+.testimonios {
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 450px;
+    margin-left: 10px;
+    grid-area: testimonio;
+    /* CENTRA IMAGENES Y TEXTO */
+    text-align: center;  
+    
+    
+}
+
+.testimonios p {
+    font-size: 24px;
+    line-height: 40px;
+    margin: 50px 20px;
+}
+
+.puesto {
+    color: rgba(167, 171, 172, 1);
+    
+}
+
+
+
+
+
+/* --------------------------------------------HELADO */
+
+.mix {
+    display: flex;
+    grid-area: mix;
+    background-color: rgba(144, 212, 197, 1);
+  
+  
+}
+
+.mix img {
+    width: 360px;
+    height: auto;
+    transition: transform 0.3s ease;
+  
+}
+
+.mix img:hover {
+    transform: scale(1.1);
+    
+}
+
+
+
+.footer {
+   
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 1440px;
+    height: 300px;
+    background-color: rgba(144, 212, 197, 1);
+    color: rgba(92, 160, 145, 1);
+    
+}
+
+
+.footer a {
+    text-decoration: none;
+    color: rgba(92, 160, 145, 1);
+    margin: 0 30px;
+}
+.footer-h2 {
+
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgba(50, 121, 105, 1);
+}
+
+.footer-logos img {
+margin: 60px 10px 0;
+}
+
+
+
+
+/* -------------------------------MEDIA */
+
+/* @media ( width > 400px) {
+
+    .container {
+    
+        grid-template-areas: 
+        "barra"
+        "hero"
+        "huevo"
+        "copa"
+        "cereza"
+        "testimonio"
+        "helado"
+        "footer";
+    
+    }
+    
+} */
